@@ -39,7 +39,7 @@ RegisterCommand("modo300", function()
         if isModo300Ativado then
             local currentSpeed = GetEntitySpeed(vehicle) * 3.6 
             TriggerEvent("chatMessage", "^2Modo 300 km/h ativado!")
-            TriggerServerEvent("setVehicleSpeedLimit", vehicle, currentSpeed + 300.0)
+            TriggerServerEvent("setVehicleSpeedLimit", vehicle, currentSpeed + 300.0) -- change here your max velocity!
         else
             TriggerEvent("chatMessage", "^1Modo 300 km/h desativado!")
             TriggerServerEvent("resetVehicleSpeedLimit", vehicle)
